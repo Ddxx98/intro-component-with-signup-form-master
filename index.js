@@ -27,27 +27,16 @@ var span = document.querySelector(".error")
 
 myform.addEventListener('submit',(e)=>{
     e.preventDefault()
-    console.log("In")
     var mail = email.value
     if(firstName.value == ''){
         span.innerHTML = "First name cannot be empty"
-        myform.classList.add("valid")
-        myform.classList.remove("invalid")
     }else if(lastName.value == ''){
         span.innerHTML = "Last name cannot be empty"
-        myform.classList.add("valid")
-        myform.classList.remove("invalid")
     }else if(!mail.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
         span.innerHTML = "Please enter valid email address"
-        myform.classList.add("valid")
-        myform.classList.remove("invalid")
     }else if(pass.value == ''){
         span.innerHTML = "Password cannot be empty"
-        myform.classList.add("valid")
-        myform.classList.remove("invalid")
     }else{
-        myform.classList.add("valid")
-        myform.classList.remove("invalid")
         myform.submit()
         span.innerHTML = ''
     }
