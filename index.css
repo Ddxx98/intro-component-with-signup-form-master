@@ -1,0 +1,122 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+#main-div{
+    height: 80%;
+    width: 80%;
+    margin: 2%;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%)  ;
+    padding: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif; 
+}
+#main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.right{
+    padding: 0;
+    margin: 5%;
+    width: 50%;
+    height: 70%;
+}
+.left{
+    padding: 0;
+    margin: 3%;
+    color: white;
+    width: 50%;
+    text-align: left;
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px;
+}
+.left p{
+    margin: 10px;
+}
+.right-anchor{
+    background-color: hsl(248, 32%, 49%)  ;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 40px;
+    box-shadow: 0 5px hsl(0, 46%, 55%);
+}
+.white-background{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px hsl(0, 46%, 55%);
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+input{
+    text-decoration: none;
+    width: 90%;
+    height: 30px;
+}
+.button-claim{
+    border-radius: 5px;
+    text-align: center;
+    width: 93%;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    margin: 20px;
+    text-decoration: none;
+    height: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+.paragraph{
+    font-size: 10px;
+    opacity: 0.4;
+}
+.paragraph a{
+    color: red;
+    opacity: 20;
+}
+.right-anchor a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.error{
+    margin: 0;
+    padding: 0;
+    top: -10px;
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+    h1{
+        font-size: 30px;
+    }
+    #main-container{
+        flex-direction: column;
+    }
+}
